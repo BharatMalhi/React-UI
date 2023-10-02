@@ -10,6 +10,7 @@
   flex-direction: column;
   gap: 2rem;
   position: relative;
+  padding-left: 25px
 }
 
 .left > :nth-child(1) {
