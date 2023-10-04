@@ -6,15 +6,10 @@ import { CgShoppingBag, } from "react-icons/cg";
 import{ImMenu} from "react-icons/im"
 const Header = () => {
   const [showMenu, setShowMenu] = useState(false);
-  const openHandler= () =>{
-    if (!showMenu) {
-      setShowMenu(true);
-     
-    } else {
-      setShowMenu(false);
+  const toggleMenu = () => {
   
-    }
-  }
+    setShowMenu((showMenu)=>!showMenu);
+  };
   return (
     <div className={css.container}>
       <div className={css.logo}>
@@ -24,16 +19,17 @@ const Header = () => {
 
       <div className={css.right}>
       <div className={css.bar}  >
-        <ImMenu  onClick={() => openHandler()} />
+        <ImMenu onClick={toggleMenu} />
       </div>
-          <ul className={css.menu}>
+      
+          <ul className={css.menu} style={{display:showMenu? 'inherit' : 'none'}}>
             <li>Collection </li>
             <li> Brands</li>
             <li>New</li>
             <li>Select</li>
             <li>ENG</li>
           </ul>
-
+    
         <input type="text" className={css.search} placeholder="Search" />
         <CgShoppingBag className={css.cart} />
       </div>

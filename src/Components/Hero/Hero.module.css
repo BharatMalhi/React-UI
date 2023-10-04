@@ -13,7 +13,7 @@
 .wrapper > img {
   width: 26rem;
   position: absolute;
-  margin-top: -1px; 
+  margin-top: -1px;
 }
 
 .blueCircle {
@@ -112,4 +112,47 @@
 .customer > :first-child {
   font-weight: 800;
   font-size: 2.5rem;
+}
+@media screen and (max-width: 856) {
+  .text1,
+  .text2 > span:nth-child(2) {
+    font-size: 0.9rem;
+    text-align: justify;
+  }
+  .text2,
+  .text2 > span:nth-child(1),
+  .text1,
+  .text2 > span:nth-child(1),
+  .text1,
+  .text2 > span:nth-child(1) {
+    font-size: 1.5rem;
+    text-align: left;
+  }
+  .blueCircle {
+    position: absolute;
+    width: 70%;
+    height: 100%;
+  }
+  .wrapper > img {
+    width: 70%;
+    height: 100%;
+  }
+  .container {
+    grid-template-areas: "left center center" "right right right";
+  }
+  .container>:first-child{
+    grid-area: auto;
+    grid-template-rows: none;
+    gap: 8rem;
+
+  }
+  .container>:first-child(2){
+    grid-area:auto;
+  }
+  .container>:first-child(3){
+    grid-area: auto;
+    display: flex;
+    justify-content: space-around;
+    margin: 2rem 0rem;
+  }
 }
