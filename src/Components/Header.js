@@ -5,7 +5,7 @@ import Logo from "../assets/logo.png";
 import { CgShoppingBag, } from "react-icons/cg";
 import{ImMenu} from "react-icons/im"
 const Header = () => {
-  const [showMenu, setShowMenu] = useState(false);
+  const [showMenu, setShowMenu] = useState(true);
   const toggleMenu = () => {
   
     setShowMenu((showMenu)=>!showMenu);

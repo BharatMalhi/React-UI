@@ -7,11 +7,12 @@
     align-items: center;
     flex: 1;
     gap: 1rem ;
+    font-size: 27px
 }
 
 .logo>img{
-width: 2.5rem;
-height: 2.5rem;
+width: 4.5rem;
+height: 4.5rem;
 }
 .logo>span{
     font-weight: 600;
@@ -23,20 +24,25 @@ height: 2.5rem;
     align-items: center;
     justify-content: center;
 }
-.menu ul{
+.menu {
     display: flex;
     gap: 2rem;
     font-weight: 500;
     list-style: none ;
-}
+    margin-top: 15px;
+    font-size: 22px;
 
-.menu li:hover{
+}
+.bar{
+    display: none;
+}
+.menu  li:hover{
     color: chocolate;
     cursor: pointer;
 }
 
 .search{
-    width: 7rem;
+    width: 10rem;
     outline: none;
     border-radius: 5px;
 border: none;
@@ -49,7 +55,7 @@ border: none;
     height: 1.5rem;
     cursor: pointer;
 }
-@media screen and (max-width: 856){
+@media screen and (max-width: 856px){
     .search{
         display: none;
 
@@ -78,7 +84,7 @@ border: none;
     .menu ul{
         text-decoration: none;
     }
-    .bars{
+    .bar{
         display: block;
     }
     .search{

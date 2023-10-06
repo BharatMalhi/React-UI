@@ -11,14 +11,15 @@
   position: relative;
 }
 .wrapper > img {
-  width: 26rem;
+  width: 20rem;
   position: absolute;
-  margin-top: -1px;
+  
+  margin-bottom: -3px
 }
 
 .blueCircle {
-  width: 30rem;
-  height: 28rem;
+  width: 26rem;
+  height: 25rem;
   border-radius: 50%;
   z-index: -99;
   position: absolute;
@@ -98,22 +99,31 @@
   display: flex;
   flex-direction: column;
   text-align: right;
+  margin-right: 1.5rem
+
 }
 .traffic > :first-child {
   font-weight: 800;
   font-size: 2.5rem;
+  margin-right: 1.5rem
 }
 .customer {
   display: flex;
   flex-direction: column;
   text-align: right;
+  margin-right: 1.5rem
+
 }
 
 .customer > :first-child {
   font-weight: 800;
   font-size: 2.5rem;
+  margin-right: 1.5rem
+
 }
-@media screen and (max-width: 856) {
+
+
+@media screen and (max-width: 856px) {
   .text1,
   .text2 > span:nth-child(2) {
     font-size: 0.9rem;
@@ -154,5 +164,22 @@
     display: flex;
     justify-content: space-around;
     margin: 2rem 0rem;
+  }
+}
+@media screen and (max-width: 640px){
+  .blueCircle{
+    top: 0;
+    width: 16rem;
+    height: 72%;
+  }
+  .wrapper>img{
+    top: 3rem;
+    width: 12rem;
+    height: 15rem;
+  }
+
+  .cart2{
+  transform: scale(0.6);
+  right: -2rem;
   }
 }

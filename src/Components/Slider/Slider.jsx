@@ -18,11 +18,23 @@ const Slider = () => {
   return (
     <div className="s-container">
       <Swiper
+
+     //mobile reponsive breaks points 
+      breakpoints={{
+//for mobile view
+        640:{
+          slidesPerView:3
+        },
+//less then mobile view
+        0:{
+          slidesPerView:0
+        },
+      }}
         // pagination={true}
         modules={[Navigation, Pagination]}
         className="mySwiper"
         navigation={true}
-        spaceBetween={50}
+        spaceBetween={40}
         slidesPerView={3}
         slidesPerGroup={1}
       

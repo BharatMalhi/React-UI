@@ -84,3 +84,16 @@ margin-top: 2rem;
     background: rgb(25, 30, 30);
     border: none;
 }
+
+@media screen and (max-width: 856px){
+    .wrapper{
+        grid-template-columns: 1fr;
+    }
+    .wrapper>img{
+        width:80vw;
+    }
+    .wrapper>:nth-child(3), .wrapper>:nth-child(1)
+    {
+        text-align: center;
+    }
+}

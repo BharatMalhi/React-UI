@@ -25,10 +25,21 @@ import  {TestimonialsData} from "../../data/testimonials.js"
     <div className={css.reviews}></div>
     <div className={css.carousal}>
     <Swiper
-    spaceBetween={50}
+    spaceBetween={20}
       slidesPerView={3}
       slidesPerGroup={1}
       className={css.tCarousal}
+      breakpoints={{
+        856:{
+          slidesPerView:3
+        },
+        640:{
+          slidesPerView:2
+        },
+        0:{
+          slidesPerView:1
+        },
+      }}
 
     
     
